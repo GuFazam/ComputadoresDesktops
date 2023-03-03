@@ -41,6 +41,12 @@ namespace ComputadoresDesktops
             this.pictureBoxNotebook1.Visible = false;
             this.pictureBoxNotebook2.Visible = false;
             this.pictureBoxNotebook3.Visible = false;
+            this.radioButton3.Visible = true;
+            this.radioButton4.Visible = true;
+            this.radioButton5.Visible = true;
+            this.radioButton6.Visible = false;
+            this.radioButton7.Visible = false;
+            this.radioButton8.Visible = false;
         }
 
         private void radioButtonNotebook_CheckedChanged(object sender, EventArgs e)
@@ -51,6 +57,12 @@ namespace ComputadoresDesktops
             this.pictureBoxComputador1.Visible = false;
             this.pictureBoxComputador2.Visible = false;
             this.pictureBoxComputador3.Visible = false;
+            this.radioButton3.Visible = false;
+            this.radioButton4.Visible = false;
+            this.radioButton5.Visible = false;
+            this.radioButton6.Visible = true;
+            this.radioButton7.Visible = true;
+            this.radioButton8.Visible = true;
         }
 
         private void buttonLimpar_Click(object sender, EventArgs e)
