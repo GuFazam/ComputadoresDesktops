@@ -16,5 +16,51 @@ namespace ComputadoresDesktops
         {
             InitializeComponent();
         }
+
+        private void buttonSair_Click(object sender, EventArgs e)
+        {
+            this.pictureBoxComputador1.Visible = false;
+            this.pictureBoxComputador2.Visible = false;
+            this.pictureBoxComputador3.Visible = false;
+            this.pictureBoxNotebook1.Visible = false;
+            this.pictureBoxNotebook2.Visible = false;
+            this.pictureBoxNotebook3.Visible = false;
+            this.radioButton3.Checked = false;
+            this.radioButton4.Checked = false;
+            this.radioButton5.Checked = false;
+            this.radioButton6.Checked = false;
+            this.radioButton7.Checked = false;
+            this.radioButton8.Checked = false;
+        }
+
+        private void radioButtonComputador_CheckedChanged(object sender, EventArgs e)
+        {
+            this.pictureBoxComputador1.Visible = true;
+            this.pictureBoxComputador2.Visible = true;
+            this.pictureBoxComputador3.Visible = true;
+            this.pictureBoxNotebook1.Visible = false;
+            this.pictureBoxNotebook2.Visible = false;
+            this.pictureBoxNotebook3.Visible = false;
+        }
+
+        private void radioButtonNotebook_CheckedChanged(object sender, EventArgs e)
+        {
+            this.pictureBoxNotebook1.Visible = true;
+            this.pictureBoxNotebook2.Visible = true;
+            this.pictureBoxNotebook3.Visible = true;
+            this.pictureBoxComputador1.Visible = false;
+            this.pictureBoxComputador2.Visible = false;
+            this.pictureBoxComputador3.Visible = false;
+        }
+
+        private void buttonLimpar_Click(object sender, EventArgs e)
+        {
+            this.radioButton3.Checked = false;
+            this.radioButton4.Checked = false;
+            this.radioButton5.Checked = false;
+            this.radioButton6.Checked = false;
+            this.radioButton7.Checked = false;
+            this.radioButton8.Checked = false;
+        }
     }
 }
