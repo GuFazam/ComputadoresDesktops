@@ -19,32 +19,7 @@ namespace ComputadoresDesktops
 
         private void buttonSair_Click(object sender, EventArgs e)
         {
-            this.pictureBoxComputador1.Visible = false;
-            this.pictureBoxComputador2.Visible = false;
-            this.pictureBoxComputador3.Visible = false;
-
-            this.pictureBoxNotebook1.Visible = false;
-            this.pictureBoxNotebook2.Visible = false;
-            this.pictureBoxNotebook3.Visible = false;
-
-            this.radioButton3.Checked = false;
-            this.radioButton4.Checked = false;
-            this.radioButton5.Checked = false;
-
-            this.radioButton6.Checked = false;
-            this.radioButton7.Checked = false;
-            this.radioButton8.Checked = false;
-
-            this.radioButton3.Visible = false;
-            this.radioButton4.Visible = false;
-            this.radioButton5.Visible = false;
-
-            this.radioButton6.Visible = false;
-            this.radioButton7.Visible = false;
-            this.radioButton8.Visible = false;
-
-            this.label1.Visible = false;
-            this.label2.Visible = false;
+            Close();
         }
 
         private void radioButtonComputador_CheckedChanged(object sender, EventArgs e)
@@ -93,8 +68,13 @@ namespace ComputadoresDesktops
 
         private void buttonLimpar_Click(object sender, EventArgs e)
         {
-            radioButtonComputador.Checked = false;
-            radioButtonNotebook.Checked = false;
+            this.pictureBoxComputador1.Visible = false;
+            this.pictureBoxComputador2.Visible = false;
+            this.pictureBoxComputador3.Visible = false;
+
+            this.pictureBoxNotebook1.Visible = false;
+            this.pictureBoxNotebook2.Visible = false;
+            this.pictureBoxNotebook3.Visible = false;
 
             this.radioButton3.Checked = false;
             this.radioButton4.Checked = false;
@@ -103,6 +83,14 @@ namespace ComputadoresDesktops
             this.radioButton6.Checked = false;
             this.radioButton7.Checked = false;
             this.radioButton8.Checked = false;
+
+            this.radioButton3.Visible = false;
+            this.radioButton4.Visible = false;
+            this.radioButton5.Visible = false;
+
+            this.radioButton6.Visible = false;
+            this.radioButton7.Visible = false;
+            this.radioButton8.Visible = false;
 
             this.label1.Visible = false;
             this.label2.Visible = false;
